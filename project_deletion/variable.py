@@ -1,8 +1,10 @@
+import os
+
 from googleapiclient import discovery
 
 from oauth2client.client import GoogleCredentials
 
-projectid = input("Enter project_id : ")
+projectid = os.getenv("Project_Id")
 
 credentials = GoogleCredentials.get_application_default()
         
